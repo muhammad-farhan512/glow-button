@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Button</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: red;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+        }
+        .glow-btn{
+            background-color: transparent;
+            box-shadow: 0 0 10px red;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            padding: 40px;
+            font-size: 4rem;
+            border-radius: 50px;
+            text-shadow: 0 0 5px red;
+            transition: all 0.3s ease-in-out;
+            
+        }
+        .glow-btn:hover{
+            box-shadow: 0 0 30px red;
+        }
+    </style>
+</head>
+<body>
+    <button class="glow-btn">Glow Button</button>
+</body>
+</html>
